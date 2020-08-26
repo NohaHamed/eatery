@@ -1,0 +1,282 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'Spectral', serif;
+    margin: 0;
+    padding: 0;
+}
+/* Button ================ */
+button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: block;
+    max-width: 4rem;
+    margin: 0px auto 20px auto;
+}
+/* logo ======================== */
+.site-logo {
+    padding: 0px 15px 0px 15px;
+}
+
+/* Navigation ================= */
+.menu-main ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.menu-main a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    display: block;
+}
+.menu-main a:hover {
+    color: hotpink;
+}
+.menu-main a span {
+    display: none;
+}
+.menu-main li {
+    padding: 10px;
+}
+
+.menu-secondary ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+.menu-secondary ul {
+    text-align: center;
+}
+.menu-secondary a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+}
+.menu-secondary a:hover {
+    color: white;
+    background-color: hotpink;
+} 
+
+.dropdown-menu {
+    display: none;
+    padding-bottom: 20px;
+}
+.dropdown-menu-show {
+    display: block;
+}
+
+
+
+/* food menus ========================= */
+.menu-food {
+    background-image: url(images/breakfast.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.lunch {
+    background-image: url(images/lunch.jpg);
+}
+.dinner {
+    background-image: url(images/dinner.jpg);
+}
+.section-heading {
+    text-transform: capitalize;
+    background-color: hotpink;
+    color: white;
+    margin: 10px 5px 15px 5px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Spectral SC', serif;
+    font-weight: 700;
+}
+.menu-food {
+    padding: 15px;
+    color: white;
+    margin: 0;
+}
+caption {
+    text-align: left;
+    font-size: 2rem;
+    padding: 15px 0 10px 0;
+}
+.main, .sides, .drinks {
+    background-color: rgb(27, 26, 26);
+    opacity: 0.7;
+    padding: 15px;
+    margin: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    border-bottom: 8px solid rgb(88, 84, 84);
+    padding-top: 10px;
+}
+td:nth-child(2) {
+    text-align: right;
+}
+/* Staff & Contact ========================= */
+.staff {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(85, 85, 128), rgb(0, 0, 0));
+    margin: 0;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.staff-member-photo img {
+    border-radius: 50% 50% 0 0;
+}
+
+.staff-photo-name {
+    position: relative;
+
+}
+.staff-member-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+}
+.staff-member-description {
+    background-color: black;
+    padding: 15px; 
+}
+.location-contact {
+    position: relative;
+}
+.contact-info {
+    background-color: white;
+    opacity: 0.9;
+    padding: 15px 15px 30px 15px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 150px;
+    font-weight: 700;
+}
+.contact-info h2 {
+    font-family: 'Spectral SC', serif;
+    font-size: 1.5rem;
+}
+.contact-info h3 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+.address, .hours, .reservation {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+/* Footer =============================== */
+.footer-menu ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 0;
+    margin: 0;
+}
+.footer-menu ul li {
+    background-color: black;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+.footer-menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+}
+/* Desktop display ================================== */
+@media screen and (min-width: 800px) {
+.menu-main, .menu-main ul, .menu-secondary, .menu-secondary ul, .menu-main ul li {
+    display: inline;
+} 
+.menu-main li a {
+    font-size: 1.2rem;
+}
+.menu-main li {
+    padding: 0;
+}
+.site-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+}
+.dropdown-menu {
+    grid-column: span 2;
+    display: block;
+    margin-left: 15px;
+    text-align: center;
+}
+.menu-food {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: stretch;
+    column-gap: 5px;
+}
+.section-heading, .main {
+    grid-row: span 2;
+}
+.section-heading {
+    align-self: center;
+}
+.staff {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.contact-info {
+    width: 350px;
+}
+
+
+
+button {
+    display: none;
+}
+    
+.menu-main a {
+    display: inline-block;
+    padding: 10px;
+}
+.menu-main a:hover {
+    color: white;
+    background-color: hotpink;
+}
+.site-footer {
+    display: none;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
